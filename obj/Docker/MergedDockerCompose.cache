@@ -1,0 +1,25 @@
+services:
+  mywebapi:
+    build:
+      context: C:\Users\narov\source\repos\WebFrontEnd
+      dockerfile: MyWebAPI/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: mywebapi
+    ports:
+    - target: 80
+  webfrontend:
+    build:
+      context: C:\Users\narov\source\repos\WebFrontEnd
+      dockerfile: WebFrontEnd/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: webfrontend
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\narov\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\narov\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rW8H4yEwjhRlt0Lcnyicz8EQPEgB874sxqNG5oy87CK/+q4BHfJ3RZ0vZ3N2V6SZ+Cuq8NQhZblHqG4uoglrlQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\narov\\source\\repos\\DockerJenkins\\WebFrontEnd\\WebFrontEnd.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\narov\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512"
+  ],
+  "logs": []
+}
